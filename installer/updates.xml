@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<updateDescriptor baseUrl="https://github.com/AbdelrahmanBayoumi/test-auto-update/releases/latest/download/">
-  <entry targetMediaFileId="60" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x64_1_0_4.exe" newVersion="1.0.4" newMediaFileId="60" fileSize="56000000" md5Sum="e9c469be5d19f02fd9c9f4c2fd5f0383" sha256Sum="0e629f4b003394746faa052ea75ac3a5de50aadede7fc6388f99b5a6d3f06b32" bundledJre="windows-amd64-1.8.0_271.tar.gz" archive="false" singleBundle="false">
-    <comment language="en">v1.0.4 changelog</comment>
+<updateDescriptor baseUrl="https://github.com/AbdelrahmanBayoumi/test-auto-update/releases/download/1.0.5/">
+  <entry targetMediaFileId="60" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x64_1_0_5.exe" newVersion="1.0.5" newMediaFileId="60" fileSize="56000000" md5Sum="ad0c9872be7502346f49d4d3e7deb4b9" sha256Sum="968d85d4eb815e57dc17afb3155c2c78a2597981fb35be3bb2bdabafbba519aa" bundledJre="windows-amd64-1.8.0_271.tar.gz" archive="false" singleBundle="false">
+    <comment language="en">v1.0.5 changelog</comment>
   </entry>
-  <entry targetMediaFileId="792" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x32_1_0_4.exe" newVersion="1.0.4" newMediaFileId="792" fileSize="52433408" md5Sum="bd389dd7a76292f15b8918ab3ec7c038" sha256Sum="19e8a453a8cb4922b3fd30131d7d9547c9dc101ec6caad385a3df926e66b4ccf" bundledJre="windows-x86-1.8.0_271.tar.gz" archive="false" singleBundle="false">
-    <comment language="en">v1.0.4 changelog</comment>
+  <entry targetMediaFileId="792" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x32_1_0_5.exe" newVersion="1.0.5" newMediaFileId="792" fileSize="52433408" md5Sum="d7bceef8f6511af732dab35cbdc83717" sha256Sum="2358bcd69001efc9adec30e27496cf58bc9c4e7f0239f762d1c02703c1c29645" bundledJre="windows-x86-1.8.0_271.tar.gz" archive="false" singleBundle="false">
+    <comment language="en">v1.0.5 changelog</comment>
   </entry>
 </updateDescriptor>
