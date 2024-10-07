@@ -7,7 +7,7 @@ public class Constants {
     // Program characteristics
     public static String assetsPath;
     public final static String APP_NAME = "AppTestUpdate";
-    public final static String VERSION = "1.0.0";
+    public final static String VERSION = "1.0.1";
 
     static {
         try {
