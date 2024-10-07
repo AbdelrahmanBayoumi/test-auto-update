@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="8.0.11" transformSequenceNumber="8">
-  <directoryPresets config="${compiler:PARENT_DIR}/Azkar-App/Azkar/target/jfx/app/Azkar-jfx.jar" />
-  <application name="${compiler:APP_FULL_NAME}" applicationId="6460-1129-3694-1642" mediaDir="${compiler:PARENT_DIR}/exe_output" pack200Compression="true" shortName="${compiler:APP_SHORT_NAME}" publisher="${compiler:Publisher}" publisherWeb="${compiler:Publisher}" version="${compiler:APP_VERSION}" macVolumeId="46e77254d484fdd2" javaMinVersion="1.8" javaMaxVersion="1.8" jdkMode="jdk" jdkName="JDK 1.8">
+  <directoryPresets config="${compiler:PARENT_DIR}/Azkar/target/jfx/app/AppTestUpdate-jfx.jar" />
+  <application name="${compiler:APP_FULL_NAME}" applicationId="9811-3939-8288-6678" mediaDir="${compiler:PARENT_DIR}/installer" pack200Compression="true" shortName="${compiler:APP_SHORT_NAME}" publisher="${compiler:Publisher}" publisherWeb="${compiler:Publisher}" version="${compiler:APP_VERSION}" macVolumeId="46e77254d484fdd2" javaMinVersion="1.8" javaMaxVersion="1.8" jdkMode="jdk" jdkName="JDK 1.8">
     <variables>
       <variable name="PARENT_DIR" value="." />
       <variable name="APP_FULL_NAME" value="AppTestUpdate" />
@@ -10,12 +10,11 @@
       <variable name="Publisher" value="Abdelrahman Bayoumi" />
       <variable name="Publisher_URL" value="https://github.com/AbdelrahmanBayoumi/test-auto-update" />
       <variable name="MAIN_CLASS_PATH" value="com.bayoumi.Launcher" />
-      <variable name="ICON_PNG" value="${compiler:PARENT_DIR}\Azkar\src\main\resources\com\bayoumi\images\icon.png" />
-      <variable name="ICON_ICO" value="${compiler:PARENT_DIR}\Azkar\src\main\resources\com\bayoumi\images\icon.ico" />
-      <variable name="BASE_RELEASE_URL" value="https://azkar-server.herokuapp.com/release" />
-      <variable name="RELEASE_URL_64" value="${compiler:BASE_RELEASE_URL}/" />
-      <variable name="RELEASE_URL_32" value="${compiler:BASE_RELEASE_URL}/win_exe32/" />
+      <variable name="ICON_PNG" value="${compiler:PARENT_DIR}\AppTestUpdate\src\main\resources\com\bayoumi\images\icon.png" />
+      <variable name="ICON_ICO" value="${compiler:PARENT_DIR}\AppTestUpdate\src\main\resources\com\bayoumi\images\icon.ico" />
       <variable name="CHANGELOG_FILE" value="${compiler:PARENT_DIR}\changelog\${compiler:APP_VERSION}.txt" />
+      <variable name="UPDATES_XML_URL" value="https://raw.githubusercontent.com/AbdelrahmanBayoumi/test-auto-update/refs/heads/main/installer/updates.xml" />
+      <variable name="BASE_RELEASE_URL" value="https://github.com/AbdelrahmanBayoumi/test-auto-update/releases/latest/download/" />
     </variables>
     <jreBundles jdkProviderId="AdoptOpenJDK" release="openjdk8/jdk8u272-b10" />
   </application>
@@ -24,11 +23,11 @@
       <mountPoint id="58" />
     </mountPoints>
     <entries>
-      <fileEntry mountPoint="58" file="${compiler:PARENT_DIR}/Azkar/target/jfx/app/Azkar-jfx.jar" />
+      <fileEntry mountPoint="58" file="${compiler:PARENT_DIR}/AppTestUpdate/target/jfx/app/AppTestUpdate-jfx.jar" />
       <fileEntry mountPoint="58" file="${compiler:ICON_ICO}" />
       <fileEntry mountPoint="58" file="${compiler:ICON_PNG}" />
-      <dirEntry mountPoint="58" file="${compiler:PARENT_DIR}/Azkar/target/jfx/app/lib" entryMode="subdir" subDirectory="lib" />
-      <dirEntry mountPoint="58" file="${compiler:PARENT_DIR}/Azkar/jarFiles" entryMode="subdir" subDirectory="jarFiles" />
+      <dirEntry mountPoint="58" file="${compiler:PARENT_DIR}/AppTestUpdate/target/jfx/app/lib" entryMode="subdir" subDirectory="lib" />
+      <dirEntry mountPoint="58" file="${compiler:PARENT_DIR}/AppTestUpdate/jarFiles" entryMode="subdir" subDirectory="jarFiles" />
       <fileEntry mountPoint="58" file="${compiler:PARENT_DIR}/LICENSE" />
     </entries>
   </files>
@@ -37,7 +36,7 @@
       <executable name="${compiler:APP_FULL_NAME}" iconSet="true" iconFile="${compiler:ICON_ICO}" executableDir="." redirectStdout="true" executableMode="gui" singleInstance="true" checkConsoleParameter="true" dpiAware="false" />
       <java mainClass="${compiler:MAIN_CLASS_PATH}">
         <classPath>
-          <archive location="Azkar-jfx.jar" failOnError="false" />
+          <archive location="AppTestUpdate-jfx.jar" failOnError="false" />
         </classPath>
       </java>
       <iconImageFiles>
@@ -45,7 +44,7 @@
       </iconImageFiles>
     </launcher>
   </launchers>
-  <installerGui autoUpdateDescriptorUrl="${compiler:RELEASE_URL_64}updates.xml" useAutoUpdateBaseUrl="true" autoUpdateBaseUrl="${compiler:RELEASE_URL_64}">
+  <installerGui autoUpdateDescriptorUrl="${compiler:UPDATES_XML_URL}" useAutoUpdateBaseUrl="true" autoUpdateBaseUrl="${compiler:BASE_RELEASE_URL}">
     <autoUpdate>
       <commentFiles>
         <file location="${compiler:CHANGELOG_FILE}" languageId="en" />
@@ -1102,7 +1101,7 @@ return true;</property>
       <jreBundle jreBundleSource="preCreated" includedJre="windows-x86-1.8.0_271" />
     </windows>
   </mediaSets>
-  <buildIds buildAll="false">
+  <buildIds>
     <mediaSet refId="60" />
   </buildIds>
   <buildOptions verbose="true" />

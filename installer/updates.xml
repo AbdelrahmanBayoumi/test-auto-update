@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateDescriptor baseUrl="https://github.com/AbdelrahmanBayoumi/test-auto-update/releases/latest/download/">
+  <entry targetMediaFileId="60" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x64_1_0_0.exe" newVersion="1.0.0" newMediaFileId="60" fileSize="56023552" md5Sum="bc3572030078d1b424c430207d8a4452" sha256Sum="689f528240241aa5ff3e40ad4f8f8e8bff3e3b20aea9f7b363cd9e4eac6707df" bundledJre="windows-amd64-1.8.0_271.tar.gz" archive="false" singleBundle="false">
+    <comment language="en">v1.0.0 changelog</comment>
+  </entry>
+  <entry targetMediaFileId="792" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x32_1_0_0.exe" newVersion="1.0.0" newMediaFileId="792" fileSize="52457472" md5Sum="5c3f8f4a2d916a1010f55978390e94b9" sha256Sum="40377d0856af27225f05de38440c36af1446c866a00861421b75c25b65f4f1e6" bundledJre="windows-x86-1.8.0_271.tar.gz" archive="false" singleBundle="false">
+    <comment language="en">v1.0.0 changelog</comment>
+  </entry>
+</updateDescriptor>

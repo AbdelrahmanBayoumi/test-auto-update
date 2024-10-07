@@ -1,0 +1,4 @@
+# List of generated media files. The columns are tab-separated:
+# id | media file type | display name | media file path
+792	windows	Windows 32	C:\dev\Coding\GitHub\AbdelrahmanBayoumi\test-auto-update\exe_output\AppTestUpdate_windows-x32_1_0_0.exe
+60	windows	Windows 64	C:\dev\Coding\GitHub\AbdelrahmanBayoumi\test-auto-update\exe_output\AppTestUpdate_windows-x64_1_0_0.exe
