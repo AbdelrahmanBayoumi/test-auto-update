@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <updateDescriptor baseUrl="https://github.com/AbdelrahmanBayoumi/test-auto-update/releases/latest/download/">
-  <entry targetMediaFileId="60" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x64_1_0_3.exe" newVersion="1.0.3" newMediaFileId="60" fileSize="56000000" md5Sum="b0219f3cd8bdd58d7865121ea3d595b6" sha256Sum="182e33aee493559618cb0b443f065a8858f020b7f0fd0dc4f73d8290a119f29d" bundledJre="windows-amd64-1.8.0_271.tar.gz" archive="false" singleBundle="false">
-    <comment language="en">v1.0.3 changelog</comment>
+  <entry targetMediaFileId="60" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x64_1_0_4.exe" newVersion="1.0.4" newMediaFileId="60" fileSize="56000000" md5Sum="e9c469be5d19f02fd9c9f4c2fd5f0383" sha256Sum="0e629f4b003394746faa052ea75ac3a5de50aadede7fc6388f99b5a6d3f06b32" bundledJre="windows-amd64-1.8.0_271.tar.gz" archive="false" singleBundle="false">
+    <comment language="en">v1.0.4 changelog</comment>
   </entry>
-  <entry targetMediaFileId="792" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x32_1_0_3.exe" newVersion="1.0.3" newMediaFileId="792" fileSize="52433408" md5Sum="78d9411688cd81c3a9b03a1f5f4c0279" sha256Sum="a47fbfb986ded9798ee26f287e3af8ab8d18eccdc58ec673556689b8290f14ae" bundledJre="windows-x86-1.8.0_271.tar.gz" archive="false" singleBundle="false">
-    <comment language="en">v1.0.3 changelog</comment>
+  <entry targetMediaFileId="792" updatableVersionMin="" updatableVersionMax="" fileName="AppTestUpdate_windows-x32_1_0_4.exe" newVersion="1.0.4" newMediaFileId="792" fileSize="52433408" md5Sum="bd389dd7a76292f15b8918ab3ec7c038" sha256Sum="19e8a453a8cb4922b3fd30131d7d9547c9dc101ec6caad385a3df926e66b4ccf" bundledJre="windows-x86-1.8.0_271.tar.gz" archive="false" singleBundle="false">
+    <comment language="en">v1.0.4 changelog</comment>
   </entry>
 </updateDescriptor>

@@ -44,7 +44,7 @@ public class Launcher extends Application {
         VBox root = new VBox(10);
         root.setAlignment(javafx.geometry.Pos.CENTER);
         Label label = new Label("Version of Installer: " + versionOfInstaller + "\nVersion of Jar: " + versionOfJar);
-        label.setStyle("-fx-font-size: 20px;fx-font-weight: bold;");
+        label.setStyle("-fx-font-size: 25px;fx-font-weight: bold;");
 
 
         HBox hBox = new HBox(10);
