@@ -6,7 +6,7 @@
       <variable name="PARENT_DIR" value="." />
       <variable name="APP_FULL_NAME" value="AppTestUpdate" />
       <variable name="APP_SHORT_NAME" value="AppTestUpdate" />
-      <variable name="APP_VERSION" value="1.0.1" />
+      <variable name="APP_VERSION" value="1.0.2" />
       <variable name="Publisher" value="Abdelrahman Bayoumi" />
       <variable name="Publisher_URL" value="https://github.com/AbdelrahmanBayoumi/test-auto-update" />
       <variable name="MAIN_CLASS_PATH" value="com.bayoumi.Launcher" />
@@ -1001,11 +1001,6 @@ return true;</property>
                   </property>
                   <property name="imageAnchor" type="enum" class="com.install4j.api.beans.Anchor" value="NORTHEAST" />
                   <property name="imageEdgeBorderWidth" type="int" value="2" />
-                  <property name="imageFile">
-                    <object class="com.install4j.api.beans.ExternalFile">
-                      <string>${compiler:ICON_PNG}</string>
-                    </object>
-                  </property>
                   <property name="imageInsets">
                     <object class="java.awt.Insets">
                       <int>0</int>
@@ -1094,10 +1089,10 @@ return true;</property>
     </styles>
   </installerGui>
   <mediaSets>
-    <windows name="Windows 64" id="60">
+    <windows name="Windows 64" id="60" mediaFileName="${compiler:sys.shortName}_${compiler:sys.platform}">
       <jreBundle jreBundleSource="preCreated" includedJre="windows-amd64-1.8.0_271" />
     </windows>
-    <windows name="Windows 32" id="792" jreBitType="32">
+    <windows name="Windows 32" id="792" mediaFileName="${compiler:sys.shortName}_${compiler:sys.platform}" jreBitType="32">
       <jreBundle jreBundleSource="preCreated" includedJre="windows-x86-1.8.0_271" />
     </windows>
   </mediaSets>
