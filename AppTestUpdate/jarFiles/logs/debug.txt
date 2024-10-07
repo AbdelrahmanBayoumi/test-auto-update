@@ -1,3 +1,0 @@
-[07-10-2024] [04:00:54.595 PM] => com.bayoumi.util.update.UpdateHandler.getUpdateDescriptor(): Can't check update url: C:\Users\abdel\AppData\Local\Temp\install4jNative\9078\windows-x64\i4jparams.conf (The system cannot find the file specified)
-[07-10-2024] [04:00:54.598 PM] => com.bayoumi.Launcher.checkForUpdate(): error => only installers and single bundle archives on macOS are supported for background updates
-[07-10-2024] [04:00:54.599 PM] => com.bayoumi.util.update.UpdateHandler.checkUpdate(): Update check Server Error
