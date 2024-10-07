@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bayoumi</groupId>
+    <artifactId>AppTestUpdate</artifactId>
+    <version>1.2.8-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <jdk.version>1.8</jdk.version>
+        <app.name>AppTestUpdate</app.name>
+        <mainClass>com.bayoumi.Launcher</mainClass>
+    </properties>
+
+
+    <repositories>
+        <repository>
+            <id>ej-technologies</id>
+            <url>https://maven.ej-technologies.com/repository</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+
+        <!-- Install4J Runtime for scripting installers and uninstallers, developing extensions and for accessing runtime services. -->
+        <dependency>
+            <groupId>com.install4j</groupId>
+            <artifactId>install4j-runtime</artifactId>
+            <version>9.0.2</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <finalName>${app.name}</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>8.8.3</version>
+                <configuration>
+                    <vendor>${app.name}</vendor>
+                    <appName>${app.name}</appName>
+                    <title>${app.name}</title>
+                    <description>${app.name}</description>
+                    <needMenu>true</needMenu>
+                    <needShortcut>true</needShortcut>
+                    <mainClass>${mainClass}</mainClass>
+                    <additionalAppResources>jarFiles</additionalAppResources>
+                    <bundleArguments>
+                        <icon>${project.basedir}/src/main/deploy/package/windows/icon.ico</icon>
+                    </bundleArguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
